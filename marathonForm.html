@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Race Register Form</title>
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+
+<body>
+  <h1>Race Registration!</h1>
+  <form action="">
+    <div>
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" required>
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" required>
+    </div>
+    <div>
+      <label>Select a Race:</label>
+      <div>
+        <label for="funrun">Fun Run 5k</label>
+        <input type="radio" name="race" id="funrun" value="funrun">
+      </div>
+      <div><label for="half">Half Marathon</label>
+        <input type="radio" name="race" id="half" value="half">
+      </div>
+      <div>
+        <label for="full">Full Marathon</label>
+        <input type="radio" name="race" id="full" value="full">
+      </div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" required>
+      <label for="password">Password</label>
+      <input id="password" type="password" required>
+    </div>
+    <div>
+      <label for="division">
+        Select Age Group
+      </label>
+      <select name="division" id="division">
+        <option value="kids">under 18</option>
+        <option value="ya">18-30</option>
+        <option value="adults">30-50</option>
+        <option value="seniors">50+</option>
+      </select>
+    </div>
+    <button>Register</button>
+  </form>
+
+</body>
+
+</html>
